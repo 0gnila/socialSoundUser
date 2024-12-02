@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.socialSound.socialSound.Signup">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="193.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/org/socialSound/socialSound/images/socialSoundLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="402.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="114.0" prefHeight="30.0" prefWidth="95.0" text="Full name" textAlignment="CENTER" textFill="#e0b0ff">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="144.0" prefHeight="30.0" prefWidth="95.0" text="Username" textAlignment="CENTER" textFill="#e0b0ff">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="174.0" prefHeight="30.0" prefWidth="95.0" text="Password" textAlignment="CENTER" textFill="#e0b0ff">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="208.0" prefHeight="30.0" prefWidth="91.0" text="Email" textAlignment="CENTER" textFill="#e0b0ff">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Fullname" layoutX="178.0" layoutY="114.0" promptText="Full Name" />
+            <TextField fx:id="Username" layoutX="178.0" layoutY="144.0" promptText="Username" />
+            <TextField fx:id="Email" layoutX="178.0" layoutY="210.0" promptText="Email Address" />
+            <PasswordField fx:id="Password" layoutX="178.0" layoutY="176.0" promptText="Password" />
+            <Button fx:id="signup" layoutX="165.0" layoutY="263.0" mnemonicParsing="false" onAction="#Signsup" prefHeight="37.0" prefWidth="81.0" style="-fx-background-color: #E0B0FF;" text="Sign Up" />
+            <Label layoutX="178.0" layoutY="91.0" textFill="RED" />
+            <Label fx:id="teller" alignment="CENTER" contentDisplay="CENTER" layoutX="178.0" layoutY="76.0" prefHeight="30.0" prefWidth="158.0" text="Welcome to SocialSound" textAlignment="CENTER" textFill="#e0b0ff">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
